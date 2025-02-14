@@ -1,9 +1,6 @@
 # This is a simple Python script to add two numbers
-
-# Define the two numbers
-num1 = $num1
-num2 = $num2
-
+num1 = $PARAM_num1
+num2 = $PARAM_num2
 # Perform the addition
 sum_result = num1 + num2
 
