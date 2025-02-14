@@ -1,6 +1,6 @@
 # This is a simple Python script to add two numbers
-num1 = $PARAM_num1
-num2 = $PARAM_num2
+num1 = os.environ.get('num1')
+num2 = os.environ.get('num2')
 # Perform the addition
 sum_result = num1 + num2
 
