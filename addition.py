@@ -1,3 +1,4 @@
+import os
 # This is a simple Python script to add two numbers
 num1 = os.environ.get('num1')
 num2 = os.environ.get('num2')
