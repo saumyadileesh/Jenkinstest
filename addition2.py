@@ -1,13 +1,22 @@
 import sys
  
-# Fetch the single string parameter from Jenkins
-input_values = sys.argv[1]
+# Check if arguments are passed
+
+if len(sys.argv) != 3:
+
+    print("Usage: python3 test.py <num1> <num2>")
+
+    sys.exit(1)
  
-# Split the string into individual numbers (e.g., "5 3" -> [5, 3])
-num1, num2 = map(int, input_values.split())
+# Convert arguments to numbers
+
+num1 = float(sys.argv[1])
+
+num2 = float(sys.argv[2])
  
 # Perform addition
+
 result = num1 + num2
  
-# Print the result
-print(f"The sum of {num1} and {num2} is {result}")
+print(f"Addition result: {result}")
+ 
